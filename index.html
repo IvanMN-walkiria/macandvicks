@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      MacAndVicks CTA - Plugin WordPress para Crear CTAs con Shortcodes
+    </title>
+    <meta
+      name="description"
+      content="Plugin de WordPress para crear y gestionar CTAs personalizables con shortcodes. Fácil configuración, estilos personalizados y vista previa en tiempo real."
+    />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="canonical"
+      href="https://ivanmn-walkiria.github.io/macandvicks/"
+    />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="MacAndVicks CTA - Plugin WordPress para Crear CTAs con Shortcodes"
+    />
+    <meta
+      property="og:description"
+      content="Plugin de WordPress para crear y gestionar CTAs personalizables con shortcodes. Fácil configuración, estilos personalizados y vista previa en tiempo real."
+    />
+    <meta
+      property="og:image"
+      content="https://ivanmn-walkiria.github.io/macandvicks/images/OpenGraphImage.png"
+    />
+    <meta
+      property="og:url"
+      content="https://ivanmn-walkiria.github.io/macandvicks/"
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="contenedor">
+        <h1>
+          <img
+            src="images/LogoMacAndVicks.png"
+            alt="MacAndVicks"
+            class="logo-header"
+          />
+          MacAndVicks CTA
+        </h1>
+
+        <nav>
+          <a href="#caracteristicas" data-section="nav" data-value="features"
+            >Características</a
+          >
+          <a href="#uso" data-section="nav" data-value="usage">Cómo Usar</a>
+          <a href="#instalacion" data-section="nav" data-value="install"
+            >Instalación</a
+          >
+          <button id="theme-toggle" aria-label="Cambiar tema">
+            <span class="sun-icon">☀️</span>
+            <span class="moon-icon">🌙</span>
+          </button>
+
+          <!-- Selector de idiomas -->
+          <div class="language-selector">
+            <button id="current-language" aria-label="Cambiar idioma">
+              <img id="current-flag" src="images/flags/es.png" alt="ES" />
+            </button>
+            <div class="language-dropdown" id="language-dropdown">
+              <button data-lang="es" class="lang-option">
+                <img src="images/flags/es.png" alt="ES" class="flag" />
+                <span>Español</span>
+              </button>
+              <button data-lang="en" class="lang-option">
+                <img src="images/flags/gb.png" alt="EN" class="flag" />
+                <span>English</span>
+              </button>
+              <button data-lang="fr" class="lang-option">
+                <img src="images/flags/fr.png" alt="FR" class="flag" />
+                <span>Français</span>
+              </button>
+              <button data-lang="de" class="lang-option">
+                <img src="images/flags/de.png" alt="DE" class="flag" />
+                <span>Deutsch</span>
+              </button>
+              <button data-lang="it" class="lang-option">
+                <img src="images/flags/it.png" alt="IT" class="flag" />
+                <span>Italiano</span>
+              </button>
+              <button data-lang="pt" class="lang-option">
+                <img src="images/flags/pt.png" alt="PT" class="flag" />
+                <span>Português</span>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Schema -->
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          "additionalType": "https://schema.org/SoftwareAddOn",
+          "name": "MacAndVicks CTA",
+          "alternateName": "macandvicks-cta",
+          "applicationCategory": "WordPress plugin",
+          "operatingSystem": "All",
+          "description": "Plugin de WordPress para crear y gestionar CTAs personalizables con shortcodes. Fácil configuración, estilos personalizados y vista previa en tiempo real.",
+          "softwareVersion": "1.0.0",
+          "datePublished": "2025-10-23",
+          "dateModified": "2025-10-23",
+          "releaseNotes": "Plugin MacAndVicks CTA versión 1.0.0",
+          "softwareRequirements": "Requires WordPress 5.0+; PHP 7.4+; MySQL 5.6+",
+          "fileFormat": "application/zip",
+          "fileSize": "1.2 MB",
+          "downloadUrl": "https://macandvicks.com/",
+          "installUrl": "https://ivanmn-walkiria.github.io/macandvicks/",
+          "inLanguage": "es",
+          "isAccessibleForFree": true,
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/InStock",
+            "url": "https://macandvicks.com/"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "MacAndVicks",
+            "url": "https://macandvicks.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://ivanmn-walkiria.github.io/macandvicks/images/LogoMacAndVicks.png"
+            }
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Víctor - MacAndVicks"
+          }
+        }
+      </script>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="contenedor hero-grid">
+        <div class="hero-imagen">
+          <img src="images/cta-creation.png" alt="Creación de CTAs" />
+        </div>
+
+        <div class="hero-contenido">
+          <h2 data-section="hero" data-value="title">
+            Crea CTAs Profesionales con Shortcodes
+          </h2>
+          <p data-section="hero" data-value="subtitle">
+            Plugin simple para crear y gestionar Call-to-Actions personalizables
+            en WordPress
+          </p>
+          <a href="https://macandvicks.com/" class="btn-cta" target="_blank">
+            <span data-section="hero" data-value="cta">Descargar Ahora</span>
+          </a>
+        </div>
+
+        <div class="hero-imagen">
+          <img src="images/cta-preview.png" alt="Vista previa de CTAs" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Características -->
+    <section id="caracteristicas">
+      <div class="contenedor">
+        <h2 data-section="features" data-value="title">
+          Características Principales
+        </h2>
+        <div class="grid-caracteristicas">
+          <div class="card">
+            <h3 data-section="features" data-value="feature1-title">
+              Shortcodes Simples
+            </h3>
+            <p data-section="features" data-value="feature1-desc">
+              Genera CTAs con códigos simples como [macv_cta id="1"]
+            </p>
+          </div>
+          <div class="card">
+            <h3 data-section="features" data-value="feature2-title">
+              Personalización Completa
+            </h3>
+            <p data-section="features" data-value="feature2-desc">
+              Colores, bordes, tamaños de texto y enlaces totalmente
+              personalizables
+            </p>
+          </div>
+          <div class="card">
+            <h3 data-section="features" data-value="feature3-title">
+              Vista Previa en Tiempo Real
+            </h3>
+            <p data-section="features" data-value="feature3-desc">
+              Ve cómo queda tu CTA mientras lo editas
+            </p>
+          </div>
+          <div class="card">
+            <h3 data-section="features" data-value="feature4-title">
+              Gestión Centralizada
+            </h3>
+            <p data-section="features" data-value="feature4-desc">
+              Crea, edita y gestiona todos tus CTAs desde un panel unificado
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cómo Usar -->
+    <section id="uso">
+      <div class="contenedor">
+        <h2 data-section="usage" data-value="title">Cómo Usar</h2>
+
+        <div class="paso">
+          <div class="paso-texto">
+            <h3 data-section="usage" data-value="step1-title">
+              1. Instalar y Activar
+            </h3>
+            <p data-section="usage" data-value="step1-text">
+              Sube el ZIP del plugin en
+              <strong>Plugins → Subir plugin</strong> y activa "MacAndVicks
+              CTA".
+            </p>
+          </div>
+          <div class="paso-imagen">
+            <img src="images/plugin-install.png" alt="Instalación del plugin" />
+          </div>
+        </div>
+
+        <div class="paso">
+          <div class="paso-texto">
+            <h3 data-section="usage" data-value="step2-title">
+              2. Crear tu Primer CTA
+            </h3>
+            <p data-section="usage" data-value="step2-text">
+              Ve a <strong>MacV CTAs</strong> en el menú de WordPress y
+              configura:
+            </p>
+            <ul>
+              <li data-section="usage" data-value="step2-list1">
+                Nombre interno del CTA
+              </li>
+              <li data-section="usage" data-value="step2-list2">
+                Texto que se mostrará
+              </li>
+              <li data-section="usage" data-value="step2-list3">
+                URL de destino (opcional)
+              </li>
+              <li data-section="usage" data-value="step2-list4">
+                Colores, bordes y estilos
+              </li>
+            </ul>
+          </div>
+          <div class="paso-imagen">
+            <img
+              src="images/cta-admin-panel.png"
+              alt="Panel de administración"
+            />
+          </div>
+        </div>
+
+        <div class="paso">
+          <div class="paso-texto">
+            <h3 data-section="usage" data-value="step3-title">
+              3. Usar el Shortcode
+            </h3>
+            <p data-section="usage" data-value="step3-text">
+              Copia el shortcode generado y pégalo en cualquier página, entrada
+              o widget de WordPress.
+            </p>
+            <div class="shortcode-example">
+              <code>[macv_cta id="1"]</code>
+            </div>
+          </div>
+          <div class="paso-imagen">
+            <img src="images/cta-usage-demo.gif" alt="Demostración de uso" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Demo Interactivo -->
+    <section id="demo">
+      <div class="contenedor">
+        <h2 data-section="demo" data-value="title">
+          Prueba el Creador de CTAs
+        </h2>
+        <div class="demo-container">
+          <div class="demo-controls">
+            <div class="control-group">
+              <label for="demo-text">Texto del CTA:</label>
+              <input type="text" id="demo-text" value="¡Descarga Ahora!" />
+            </div>
+
+            <div class="control-group">
+              <label for="demo-bg-color">Color de fondo:</label>
+              <input type="color" id="demo-bg-color" value="#40b4e5" />
+            </div>
+
+            <div class="control-group">
+              <label for="demo-text-color">Color del texto:</label>
+              <input type="color" id="demo-text-color" value="#ffffff" />
+            </div>
+
+            <div class="control-group">
+              <label for="demo-border-radius">Bordes redondeados:</label>
+              <input
+                type="range"
+                id="demo-border-radius"
+                min="0"
+                max="25"
+                value="8"
+              />
+              <span id="radius-value">8px</span>
+            </div>
+          </div>
+
+          <div class="demo-preview">
+            <h3>Vista Previa:</h3>
+            <div class="preview-container">
+              <button id="demo-cta" class="demo-cta-button">
+                ¡Descarga Ahora!
+              </button>
+            </div>
+            <p class="shortcode-display">
+              Shortcode: <code>[macv_cta id="1"]</code>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instalación -->
+    <section id="instalacion">
+      <div class="contenedor">
+        <h2 data-section="install" data-value="title">Instalación</h2>
+        <div class="metodos">
+          <div>
+            <h3 data-section="install" data-value="manual-title">
+              Instalación Manual
+            </h3>
+            <ol>
+              <li data-section="install" data-value="manual-step1">
+                Descarga el archivo ZIP del plugin
+              </li>
+              <li data-section="install" data-value="manual-step2">
+                Ve a Plugins → Subir plugin en tu WordPress
+              </li>
+              <li data-section="install" data-value="manual-step3">
+                Sube el archivo ZIP y activa el plugin
+              </li>
+              <li data-section="install" data-value="manual-step4">
+                Ve a MacV CTAs en el menú y crea tu primer CTA
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="contenedor">
+        <p data-section="footer" data-value="text">
+          &copy; 2025 MacAndVicks - Plugin MacAndVicks CTA
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
