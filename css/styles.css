@@ -8,17 +8,17 @@
 /* Variables */
 :root {
   --primary-dark: #1a1a2e;
+  --hero-bg: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   --accent-orange: #e94560;
-  --accent-blue: #00d2ff;
+  --accent-blue: #4facfe;
   --bg-light: #ffffff;
   --bg-gray: #f7f9fc;
   --text-dark: #2d3748;
   --text-light: #ffffff;
   --text-gray: #718096;
-  --border-color: rgba(255, 255, 255, 0.1);
+  --border-color: rgba(255, 255, 255, 0.15);
   --shadow-light: 0 4px 6px rgba(0, 0, 0, 0.05);
   --shadow-medium: 0 10px 25px rgba(0, 0, 0, 0.1);
-  --gradient-hero: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
   --gradient-accent: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
 }
 
@@ -28,6 +28,7 @@ body.dark-mode {
   --bg-gray: #16213e;
   --text-dark: #e2e8f0;
   --text-gray: #a0aec0;
+  --hero-bg: linear-gradient(135deg, #2d3561 0%, #4a4268 100%);
   --shadow-light: 0 4px 6px rgba(0, 0, 0, 0.3);
   --shadow-medium: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
@@ -95,6 +96,8 @@ h1 {
   height: 40px;
   width: auto;
   border-radius: 6px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 5px;
 }
 
 nav {
@@ -117,7 +120,7 @@ nav a {
 nav a:hover {
   color: var(--text-light);
   border-color: var(--accent-blue);
-  background: rgba(0, 210, 255, 0.1);
+  background: rgba(79, 172, 254, 0.1);
   transform: translateY(-2px);
 }
 
@@ -157,9 +160,26 @@ body.dark-mode .moon-icon {
 
 /* Hero */
 .hero {
-  background: var(--primary-dark);
+  background: var(--hero-bg);
   color: var(--text-light);
   padding: 80px 20px;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
 }
 
 .hero-grid {
@@ -201,6 +221,7 @@ body.dark-mode .moon-icon {
   border-radius: 16px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
+  filter: brightness(1.1) contrast(1.1);
 }
 
 .hero-imagen img:hover,
@@ -585,7 +606,7 @@ footer p {
 }
 
 .lang-option:hover {
-  background: rgba(0, 210, 255, 0.2);
+  background: rgba(79, 172, 254, 0.2);
   color: var(--text-light);
 }
 
@@ -597,7 +618,7 @@ footer p {
 }
 
 .lang-option.active {
-  background: rgba(0, 210, 255, 0.3);
+  background: rgba(79, 172, 254, 0.3);
   color: var(--text-light);
   font-weight: 600;
 }

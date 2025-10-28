@@ -1,0 +1,54 @@
+{
+  "nav": {
+    "features": "Funktionen",
+    "functions": "Eigenschaften",
+    "demo": "Demo",
+    "install": "Installation"
+  },
+  "hero": {
+    "title": "Erstellen Sie professionelle CTAs mit Shortcodes für WordPress",
+    "subtitle": "Einfaches Plugin zum Erstellen anpassbarer Call-to-Actions mit Farben, Rahmen und Links unter Verwendung leicht einzufügender Shortcodes.",
+    "cta": "Plugin Herunterladen"
+  },
+  "features": {
+    "title": "Hauptfunktionen",
+    "feature1-title": "Einfache Shortcodes",
+    "feature1-desc": "Generieren Sie CTAs mit einfachen Codes wie [macv_cta id=\"1\"], die Sie auf jeder Ihrer Seiten einfügen können.",
+    "feature2-title": "Vollständige Anpassung",
+    "feature2-desc": "Konfigurieren Sie Hintergrund- und Textfarben, Rahmentypen (quadratisch oder abgerundet), Dicke und Schriftgröße nach Ihrem Geschmack.",
+    "feature3-title": "Echtzeit-Vorschau",
+    "feature3-desc": "Sehen Sie genau, wie Ihr CTA aussehen wird, während Sie ihn bearbeiten, mit sofortiger Vorschau im Admin-Panel.",
+    "feature4-title": "Zentrale Verwaltung",
+    "feature4-desc": "Erstellen, bearbeiten und verwalten Sie alle Ihre CTAs von einem einheitlichen Panel mit Shortcode-Liste zum Kopieren und Einfügen."
+  },
+  "functions": {
+    "title": "Plugin-Funktionen",
+    "installed-title": "Plugin Installiert und Aktiviert",
+    "installed-desc": "Nach der Installation erscheint CTA-Plus als \"MacAndVicks CTA\" in Ihrer Plugin-Liste. Die Aktivierung ist sofort und fügt automatisch das Menü \"MacV CTAs\" zu Ihrem WordPress-Admin-Panel hinzu.",
+    "creation-title": "CTA-Erstellungsbereich",
+    "creation-desc": "Intuitive Benutzeroberfläche mit vollständigem Formular zum Erstellen von CTAs. Definieren Sie internen Namen, sichtbaren Text, Ziel-Link und passen Sie alle visuellen Aspekte an: Farben, Rahmen, Größen. Die Vorschau zeigt Ihnen das Ergebnis sofort.",
+    "frontend-title": "CTAs im Frontend",
+    "frontend-desc": "CTAs werden im Frontend perfekt mit allen angewendeten Stilen dargestellt. Sie werden zentriert angezeigt, mit subtilen Hover-Effekten und vollständig responsiv. Links funktionieren korrekt und leiten zu konfigurierten URLs weiter."
+  },
+  "demo": {
+    "title": "Sehen Sie CTA-Plus in Aktion",
+    "demo-subtitle": "Vollständiger CTA-Erstellungsablauf",
+    "demo-desc": "Von der Plugin-Aktivierung bis zum funktionierenden CTA auf Ihrer Website. Der vollständige Prozess ist intuitiv und dauert nur wenige Minuten von der Installation bis zu professionellen CTAs auf Ihren Seiten.",
+    "demo-feature1": "Plugin-Aktivierung mit einem Klick",
+    "demo-feature2": "CTA-Erstellung mit Echtzeit-Vorschau",
+    "demo-feature3": "Kopieren des automatisch generierten Shortcodes",
+    "demo-feature4": "Einfügen in Seiten und finale Visualisierung"
+  },
+  "install": {
+    "title": "Installation",
+    "step1-title": "Plugin Herunterladen",
+    "step1-text": "Laden Sie die ZIP-Datei des CTA-Plus Plugins von der offiziellen MacAndVicks Website herunter.",
+    "step2-title": "Zu WordPress Hochladen",
+    "step2-text": "Gehen Sie zu Plugins → Plugin hinzufügen in Ihrem WordPress und wählen Sie die heruntergeladene ZIP-Datei aus.",
+    "step3-title": "Aktivieren und CTAs Erstellen",
+    "step3-text": "Aktivieren Sie das Plugin und greifen Sie auf \"MacV CTAs\" in der Seitenleiste zu, um Ihre ersten benutzerdefinierten CTAs zu erstellen."
+  },
+  "footer": {
+    "text": "© 2025 MacAndVicks - CTA-Plus Plugin"
+  }
+}
