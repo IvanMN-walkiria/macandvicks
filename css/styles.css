@@ -165,15 +165,14 @@ body.dark-mode .moon-icon {
   padding: 80px 20px;
 }
 
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  gap: 40px;
-  align-items: center;
+.hero .container {
+  text-align: center;
+  max-width: 800px;
 }
 
 .hero-contenido {
   text-align: center;
+  margin: 0 auto;
 }
 
 .hero-contenido h2 {
@@ -189,27 +188,6 @@ body.dark-mode .moon-icon {
   opacity: 0.95;
   margin-bottom: 30px;
   font-weight: 400;
-}
-
-.hero-imagen {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-imagen img,
-.hero-imagen .hero-icon {
-  width: 100%;
-  max-width: 220px;
-  border-radius: 16px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
-  filter: brightness(1.1) contrast(1.1);
-}
-
-.hero-imagen img:hover,
-.hero-imagen .hero-icon:hover {
-  transform: translateY(-5px);
 }
 
 .btn-cta {
@@ -624,11 +602,6 @@ footer p {
     font-size: 0.9rem;
   }
 
-  .hero-grid {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-
   .hero-contenido h2 {
     font-size: 2.2rem;
   }
@@ -679,11 +652,6 @@ footer p {
 
   .hero-contenido h2 {
     font-size: 1.8rem;
-  }
-
-  .hero-imagen img,
-  .hero-imagen .hero-icon {
-    max-width: 180px;
   }
 
   .grid-caracteristicas {
